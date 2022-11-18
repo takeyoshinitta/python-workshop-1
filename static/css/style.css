@@ -1,9 +1,269 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
 body {
-    background-color: powderblue;
+  color: #24292e;
 }
-h1 {
-    color: blue;
+a {
+  text-decoration: none;
 }
-p {
-    color: red;
+img {
+  max-width: 100%;
+}
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto 130px auto;
+  font-size: 1.1rem;
+  padding: 0 4%;
+}
+.site-title {
+  line-height: 1px;
+}
+.site-title a {
+  display: block;
+}
+.sec-title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 65px;
+  clear: right;
+}
+.place-title {
+  font-weight: bold;
+}
+.mypic {
+  float: right;
+  margin:20px 20px 65px;
+  max-width: 40% !important;
+}
+
+/*-------------------------------------------
+Header
+-------------------------------------------*/
+#header {
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 270px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+#header ul {
+  display: flex;
+  padding: 10px 0;
+}
+#header li {
+  font-size: 0.9rem;
+  margin-left: 30px;
+}
+#header li a {
+  color: #24292e;
+}
+#header li a:hover {
+  opacity: 0.7;
+}
+#header li img.icon {
+  width: 20px;
+}
+
+/*-------------------------------------------
+Mainvisual
+-------------------------------------------*/
+#mainvisual {
+  margin-bottom: 80px;
+}
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: 420px;
+  object-fit: cover;
+}
+
+/*-------------------------------------------
+About
+-------------------------------------------*/
+#about ul {
+  margin-bottom: 30px;
+}
+#about li:first-child {
+  margin-bottom: 30px;
+}
+#about p {
+  text-align:justify;
+}
+
+/*-------------------------------------------
+Experience
+-------------------------------------------*/
+#experience dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+#experience dt {
+  width: 20%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+#experience dd {
+  width: 80%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+/*-------------------------------------------
+Education
+-------------------------------------------*/
+#education dl {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: solid 1px #c8c8c8;
+  margin-bottom: 20px;
+}
+#education dt {
+  width: 20%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+#education dd {
+  width: 80%;
+  border-bottom: solid 1px #c8c8c8;
+  padding: 15px;
+}
+
+/*-------------------------------------------
+Contact
+-------------------------------------------*/
+#contact dl {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+#contact dt {
+  width: 15%;
+}
+#contact dd {
+  width: 85%;
+  margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea {
+  width: 100%;
+  border: solid 1px #c8c8c8;
+  padding: 10px;
+}
+#contact dd textarea {
+  height: 10rem;
+}
+#contact .button {
+  text-align: center;
+}
+#contact .button input {
+  width: 200px;
+  background-color: #24292e;
+  color: #fff;
+  padding: 15px 0;
+  border: solid 1px #24292e;
+}
+#contact .button input:hover {
+  background: #fff;
+  color: #24292e;
+}
+
+/*-------------------------------------------
+Footer
+-------------------------------------------*/
+#footer {
+  background-color: #24292e;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 600px) {
+  .wrapper {
+    margin-bottom: 70px;
+  }
+  .site-title {
+    margin-top: 20px;
+  }
+  .sec-title {
+    margin-bottom: 40px;
+  }
+  .mypic {
+    margin-bottom: 20px;
+  }
+
+  /*-------------------------------------------
+  Header
+  -------------------------------------------*/
+  #header {
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  #header li {
+    font-size: 0.8rem;
+    margin-left: 20px;
+  }
+  #header li:first-child {
+    margin-left: 0;
+  }
+
+  /*-------------------------------------------
+  Experience
+  -------------------------------------------*/
+  #experience dl {
+    flex-direction: column;
+  }
+  #experience dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #experience dd {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /*-------------------------------------------
+  Education
+  -------------------------------------------*/
+  #education dl {
+    flex-direction: column;
+  }
+  #education dt {
+    width: 100%;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  #education dd {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  /*-------------------------------------------
+  Contact
+  -------------------------------------------*/
+  #contact dl {
+    flex-direction: column;
+  }
+  #contact dt {
+    width: 100%;
+  }
+  #contact dd {
+    width: 100%;
+  }
 }

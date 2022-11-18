@@ -1,10 +1,97 @@
+
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <title>Takeyoshi Nitta - Portfolio</title>
+        <meta name="description" content="top-image">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" href="static/css/style.css">
     </head>
+
     <body>
-        <h1>タイトル</h1>
-        <p>パラグラフ</p>
+        <header id="header">
+            <h1 class="site-title"><img src="static/image/title.png" alt="My Portfolio"></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/takeyoshi-nitta/" target="_blank">
+                        <img class="icon" src="static/image/linkedin.png" alt="LinkedIn"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="mainvisual">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="image/main-sp.png">
+                    <img src="static/image/main-pc.png" alt="cat and pc">
+                </picture>
+            </div>
+    
+            <section id="about" class="wrapper">
+                <h2 class="sec-title">About</h2>
+                <img src="static/image/mypic.png" alt="takeyoshi" class="mypic">
+                <ul>
+                    <li>Takeyoshi Nitta
+                    <li>Laie, Hawaii
+                    <li>tel: +1(808)497-4385
+                    <li>mail: takeyoshi43@go.byuh.edu
+                </ul>
+                <!--PHP starts here-->
+                <p>Aloha!</p>
+                <p>My name is Takeyoshi Nitta from Japan and I am currently studying computer science at Brigham Young University - Hawaii. My hobbies are playing rugby, surfing and spending time with my cats. So, I have adapted two cats from the humane society in Hawaii and am living with them!! The cat image above is a free image, but my cats also love computers and always take a nap on the keyboard of my laptop! Anyway, thank you for visiting this page.</p>
+                <!--PHP ends here-->
+            </section>
+            
+            <section id="education" class="wrapper">
+                <h2 class="sec-title">Education</h2>
+                <dl>
+                    <dt>2020 - 2023</dt>
+                    <dd><a href="https://www.byuh.edu/" class="place-title">Brigham Young University - Hawaii</a> - Bachelor of Science in Computer Science</dd>
+                    <dt>2015 - 2019</dt>
+                    <dd><a href="https://www.kindai.ac.jp/english/" class="place-title">Kindai University</a>  - Bachelor of Engineering in Informatics</dd>
+                </dl>
+            </section>
+            
+            <section id="experience" class="wrapper">
+                <h2 class="sec-title">Experience</h2>
+                <dl>
+                    <dt>08/2022 - </dt>
+                    <dd><a href="https://www.mercari.com/" class="place-title">Mercari, Inc.</a> - Software Engineer Intern</dd>
+                    <dt>09/2021 - </dt>
+                    <dd><a href="https://www.byuh.edu/" class="place-title">Brigham Young University - Hawaii</a> - EIS Developer/Analyst</dd>
+                    <dt>01/2022 - 04/2022</dt>
+                    <dd><a href="https://www.global-imi.com/" class="place-title">Integrated Micro-Electronics, Inc. (IMI Global)</a> - Developer/Engineer Intern</dd>
+                </dl>
+            </section>
+          
+    
+            <section id="contact" class="wrapper">
+                <h2 class="sec-title">Contact</h2>
+                <form action="#" method="post">
+                    <dl>
+                        <dt><label for="name">NAME</label></dt>
+                        <dd><input type="text" id="name" name="your-name"></dd>
+                        <dt><label for="email">E-mail</label></dt>
+                        <dd><input type="email" id="email" name="your-email"></dd>
+                        <dt><label for="message">MESSAGE</label></dt>
+                        <dd><textarea id="message" name="your-message"></textarea></dd>
+                    </dl>
+                    <div class="button"><input type="submit" value="Send"></div>
+                </form>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <p>&copy; 2022 Takeyoshi Nitta</p>
+        </footer>
+
     </body>
 </html>
