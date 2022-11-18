@@ -1,2 +1,2 @@
 # python-workshop-1
-This is a python workshop repository.
+This is the Python Workshop material that I use to teach my students.
